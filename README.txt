@@ -92,17 +92,18 @@ method. (See below for an alternate encoding to allow named parameters instead
 of positional parameters as depicted here.)
 
 Remote procedure calls can be issued with a response requested, or with no
-response request. Commands to the Finch, for example, do not return a useful
-value, so you needn't request a response. Requests for the obstacle sensor
-values, on the other hand, return a meaningful value, so you would want to
-request a response. The way that you indicate that no response is desired is
-by leaving off the "id" member of the JSON-RPC request, as shown in the first
-example above. When a response is desired, you provide an id value. Replace
-nnn with a number or string. The response will contain that same
-identifier. (Typically you use a numeric id value that is incremented for each
-request you issue. In a sophisticated environment, that allows for multiple
-requests to be issued concurrently, and to be able to match the responses,
-which may be returned in any order, with the requests to which they apply.)
+response request. "Set commands" to the Finch, for example, do not return a
+useful value, so you needn't request a response. Requests for the obstacle
+sensor values, on the other hand, return a meaningful value, so you would want
+to request a response. The way that you indicate that no response is desired
+is by leaving off the "id" member of the JSON-RPC request, as shown in the
+first example above. When a response is desired, you provide an id
+value. Replace nnn with a number or string. The response will contain that
+same identifier. (Typically you use a numeric id value that is incremented for
+each request you issue. In a sophisticated environment, that allows for
+multiple requests to be issued concurrently, and to be able to match the
+responses, which may be returned in any order, with the requests to which they
+apply.)
 
 A real example, using the Finch methods, might look like this:
 
