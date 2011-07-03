@@ -1,2 +1,2 @@
-java -Djava.library.path=. -classpath 'jars.linux/*' org.mozilla.javascript.tools.shell.Main $*
+java -Djava.library.path=. -classpath jars-win/* org.mozilla.javascript.tools.shell.Main %1
 
