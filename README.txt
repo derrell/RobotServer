@@ -41,9 +41,9 @@ initially contain the following files and directories:
     standalone.sh
 
 1. Although there may be some other, ancillary files in this top-level
-   directory, it is important that if you find any files with the extension
-   ".dll" or ".so" in this directory, that you remove them before proceeding
-   with step 2.
+    directory, it is important that if you find any files with the extension
+    ".jar", ".dll" or ".so" in this directory, that you remove them before
+    proceeding with step 2.
 
 Linux instructions
 ------------------
@@ -70,7 +70,7 @@ Finch Server
 ------------
 
 Run server.sh, which starts up the server. The server listens on 128.0.0.1,
-typically known as "localhost", on port 3000. 
+typically known as "localhost", on port 3000. (See Note, below)
 
 Commands to, and responses from the Finch Server are in JSON-RPC Version 2
 format. See http://groups.google.com/group/json-rpc/web/json-rpc-2-0 for
@@ -157,6 +157,15 @@ and
 and
 
  { "jsonrpc":"2.0", "method":"robot.finch.setLED", "params":{"b":256,"g":128,"r":0} }
+
+
+
+
+Note: The port number that the server listens on is specified in bootstrap.js
+in the call to the Server() constructor. See the Jetty documentation for the
+class org.mortbay.jetty.Server. If you want to listen on an interface other
+than localhost, you'll also want to look at the documentation for the class
+org.mortbay.jetty.bio.SocketConnector.
 
 
 ==============================================================================
