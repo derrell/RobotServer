@@ -45,15 +45,24 @@ initially contain the following files and directories:
    ".dll" or ".so" in this directory, that you remove them before proceeding
    with step 2.
 
-2a. If you are on Linux, copy all of the files from libs.linux/ into this
-    top-level directory. This includes libraries for both 32-bit and 64-bit
-    Linux. You may remove the one which does not apply to your
-    environment. The file name should make it obvious which is which.
+Linux instructions
+------------------
 
-    (You should also have libstdc++5 installed: apt-get install libstdc++5)
+2a. Copy all of the files from libs-linux/ into this top-level directory. That
+    will include libraries for both 32-bit and 64-bit Linux. You may remove
+    the one which does not apply to your environment. The file name should
+    make it obvious which is which.
 
-2b: If you are on Windows, copy all of the files from libs.win/ into this
-    top-level directory.
+2b. Copy all of the files from jars-linux/ into this top-level directory.
+
+2c. Be sure you have libstdc++5 installed: apt-get install libstdc++5
+
+Windows instructions
+--------------------
+
+2a: Copy all of the files from libs-win/ into this top-level directory.
+
+2b. Copy all of the files from jars-win/ into this top-level directory.
 
 ==============================================================================
 

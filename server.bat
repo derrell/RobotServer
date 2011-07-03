@@ -1,1 +1,1 @@
-java -Djava.library.path=. -classpath jars-linux/* org.mozilla.javascript.tools.shell.Main bootstrap.js
+java -Djava.library.path=. -classpath * org.mozilla.javascript.tools.shell.Main bootstrap.js
