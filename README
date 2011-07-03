@@ -16,6 +16,47 @@ There are two related, but separate capabilities described here.
 
 ==============================================================================
 
+Setup
+-----
+
+The top-level directory, in which you likely found this README file, should
+initially contain the following files and directories:
+
+    alwaysUpHill.js
+    bootstrap.js
+    build/
+    config.json
+    debugger.sh
+    Finch.js
+    generate.py
+    jars.linux/
+    jars.win/
+    libs.linux/
+    libs.win/
+    readline.js
+    README
+    README.developer
+    server.sh
+    services.js
+    standalone.sh
+
+1. Although there may be some other, ancillary files in this top-level
+   directory, it is important that if you find any files with the extension
+   ".dll" or ".so" in this directory, that you remove them before proceeding
+   with step 2.
+
+2a. If you are on Linux, copy all of the files from libs.linux/ into this
+    top-level directory. This includes libraries for both 32-bit and 64-bit
+    Linux. You may remove the one which does not apply to your
+    environment. The file name should make it obvious which is which.
+
+    (You should also have libstdc++5 installed: apt-get install libstdc++5)
+
+2b: If you are on Windows, copy all of the files from libs.win/ into this
+    top-level directory.
+
+==============================================================================
+
 Finch Server
 ------------
 

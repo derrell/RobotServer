@@ -2,5 +2,5 @@
 
 java \
   -Djava.library.path=. \
-  -classpath 'jars/*' \
+  -classpath 'jars.linux/*' \
   org.mozilla.javascript.tools.debugger.Main bootstrap.js
